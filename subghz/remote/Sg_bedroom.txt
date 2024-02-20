@@ -1,0 +1,12 @@
+Filetype: Flipper SubRem Map file
+Version: 1
+UP: /ext/subghz/SG_Bedroom_Fan/1b.sub
+DOWN: /ext/subghz/SG_Bedroom_Fan/3b.sub
+LEFT: /ext/subghz/SG_Bedroom_Fan/2b.sub
+RIGHT: /ext/subghz/SG_Bedroom_Fan/Fan_off_b.sub
+OK: /ext/subghz/SG_Bedroom_Fan/Light_b.sub
+ULABEL: 
+DLABEL: 
+LLABEL: 
+RLABEL: 
+OKLABEL: 

